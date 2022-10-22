@@ -7,7 +7,7 @@ let modalTitle = document.querySelector('.modal-title')
 let modalImg = document.querySelector('.modal-img')
 let modalImg1 = document.querySelector('.modal-img1')
 
-let randomNumber = Math.round(Math.random()*25)
+let randomNumber = Math.round(Math.random()*21)
 
 
 modalBtn.addEventListener('click', ()=>{
@@ -27,7 +27,7 @@ function findNumber(){
     let chance = document.querySelector('.chance-number')
     let chanceValue = chance.textContent--;
 
-    if(chanceValue){
+    if(chanceValue > 0){
         if(input.value - 0 == randomNumber){
 
             modalTitle.textContent = 'You won !!!'
