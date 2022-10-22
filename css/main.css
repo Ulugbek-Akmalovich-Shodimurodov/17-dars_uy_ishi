@@ -415,7 +415,7 @@ a {
 }
 
 .clicked_btn {
-  width: 70px;
+  min-width: 70px;
   height: 30px;
   border: none;
   border-radius: 5px;
