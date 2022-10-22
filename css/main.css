@@ -333,8 +333,14 @@ body {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
 }
 
 /*CONTAINER*/
@@ -420,6 +426,24 @@ img {
   font-family: "Mali", cursive;
 }
 
+.modal-container {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+.modal-container-open {
+  display: block;
+  opacity: 1;
+}
+
 .popup {
   width: 300px;
   background: #fff;
@@ -444,6 +468,7 @@ img {
 .modal-btn {
   width: 100%;
   padding: 10px 0;
+  margin: 5px;
   background: #6fd649;
   border: none;
   color: #fff;
@@ -452,4 +477,23 @@ img {
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  pointer-events: all;
+}
+
+.modal-img2 {
+  display: block;
+}
+
+.modal-img1 {
+  display: none;
+}
+
+.modal-img1-1 {
+  display: block;
+}
+
+.modal-close-btn {
+  background: #fff;
+  color: #6fd649;
+  border: 1px solid #6fd649;
 }/*# sourceMappingURL=main.css.map */
